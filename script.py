@@ -22,6 +22,18 @@ print(cur.fetchall())
 cur.execute('Select * from student where id=%s',(1,))
 print(cur.fetchone())
 
+# Updating a field in db
+cur.execute("UPDATE student SET age = 25 WHERE id = 2")
+
+# Displaying one row of table
+cur.execute('select * from messages')
+print(cur.fetchone())
+
+# Adding a new column path to existing table (Change table name)
+cur.execute('ALTER TABLE messages ADD path varchar(50)')
+cur.execute('select * from messages')
+print(cur.fetchone())
+
 conn.commit()
 #print(cur.execute('select * from public.messages;'))
 
