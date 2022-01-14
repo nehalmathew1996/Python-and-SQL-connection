@@ -23,7 +23,8 @@ cur.execute('Select * from student where id=%s',(1,))
 print(cur.fetchone())
 
 # Updating a field in db
-cur.execute("UPDATE student SET age = 25 WHERE id = 2")
+#cur.execute("UPDATE student SET age = 25 WHERE id = 2")
+cur.execute("UPDATE student SET age = 24 WHERE id = %s",[x[0]])
 
 # Displaying one row of table
 cur.execute('select * from messages')
