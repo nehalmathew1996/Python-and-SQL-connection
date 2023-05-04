@@ -1,4 +1,4 @@
-# Python-and-postgres-SQL
+# Python-and-SQL
 
 Azure and python connection Resources - 
 1. https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?redirectedfrom=MSDN&view=sql-server-ver16
